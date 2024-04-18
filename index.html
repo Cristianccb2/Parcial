@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Parcial 2</title>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="">Conocenos</a>
+            <a href="">Productos</a>
+            <a href="">Registrate</a>
+            <a href="">disponibilidad</a>
+        </nav>
+        <section class="text-header"> 
+            <h1 style="text-transform: uppercase;">Watt Wheels</h1>
+            <h2>Renta y recorre <span>sin huella de carbono</span></h2>
+        </section>
+        <div class="wave" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-9.31,79.45 C290.34,139.64 339.45,-36.98 502.54,30.11 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: rgb(255, 255, 255);"></path></svg></div>
+    </header>
+
+
+    <main class="container">
+
+        <section class="container-nosotros">
+            <h2 class="titulo">Sobre nosotros</h2> 
+            <div class="container-op1">
+                <img src="https://cdn.icon-icons.com/icons2/2348/PNG/512/image_picture_icon_143003.png" alt="">
+                <div class="text-content">
+                    <h3><span>1</span>Ayuda al medio ambiente</h3>
+                    <p>En watt wheels Rentals, nos enorgullece ser una empresa comprometida con la sostenibilidad y la protección del medio ambiente. Nuestra flota de vehículos eléctricos y scooters ecológicos está diseñada para reducir drásticamente las emisiones contaminantes.</p>
+                    <div class="second-par">
+                        <h3><span>2</span>¿Por qué viajar con nosotros?</h3>
+                    <p>En watt wheels nos enorgullece ofrecer productos de alta calidad. Todos nuestros vehículos eléctricos y scooters cuentan con una garantía que respalda su rendimiento y fiabilidad. Nuestro equipo de profesionales está comprometido a brindar un servicio amable y personalizado.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="gallery">
+            <h2 class="titulo">galeria</h2>
+            <div class="gallery-elements">
+                <figure>
+                    <img src="./images/Imagen1.jpg" alt="Imagen 1">
+                    <button id="boton1" onclick="openForm()"><p id="texto-boton">Reservar</p></button>
+                </figure>
+                <figure>
+                    <img src="./images/Imagen1.jpg" alt="Imagen 1">
+                    <button id="boton1" onclick="openForm()"><p id="texto-boton">Reservar</p></button>
+                    <!-- <figcaption>Descripción de la imagen 1</figcaption> -->
+                </figure>
+                <figure>
+                    <img src="./images/Imagen1.jpg" alt="Imagen 1">
+                    <button id="boton1" onclick="openForm()"><p id="texto-boton">Reservar</p></button>
+                </figure>
+                <figure>
+                    <img src="./images/Imagen1.jpg" alt="Imagen 1">
+                    <button id="boton1" onclick="openForm()"><p id="texto-boton">Reservar</p></button>
+                </figure>
+                <figure>
+                    <img src="./images/Imagen2.jpg" alt="Imagen 1">
+                    <button id="boton1" onclick="openForm()"><p id="texto-boton">Reservar</p></button>
+                </figure>
+                <figure>
+                    <img src="./images/Imagen2.jpg" alt="Imagen 1">
+                    <button id="boton1" onclick="openForm()"><p id="texto-boton">Reservar</p></button>
+                </figure>
+                <figure>
+                    <img src="./images/Imagen2.jpg" alt="Imagen 1">
+                    <button id="boton1" onclick="openForm()"><p id="texto-boton">Reservar</p></button>
+                </figure>
+                <figure>
+                    <img src="./images/Imagen2.jpg" alt="Imagen 1">
+                    <button id="boton1" onclick="openForm()"><p id="texto-boton">Reservar</p></button>
+                </figure>                
+            </div>
+        </div>
+
+        <div id="formulario" class="form-popup">
+            <h1>Registrate</h1>
+            <form action="#">
+                <div class="campo">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre" required>
+                </div>
+                <div class="campo">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Ingrese su email" required>
+                </div>
+                <div class="campo">
+                    <label for="mensaje">Detalles de la reserva:</label>
+                    <textarea id="mensaje" name="mensaje" placeholder="Ingrese su mensaje" required></textarea>
+                </div>
+                <button id="boton1"><p id="texto-boton">Enviar</p></button>
+
+                <button id="boton2" onclick="closeForm()"><p id="texto-boton">Cancelar</p></button>
+            </form>
+        </div>
+
+    </main>
+    <footer>
+        <div class="container-footer">
+            <div class="cont-footer">
+                <h4>phone</h4>
+                <p>numero</p>
+            </div>
+            <div class="cont-footer">
+                <h4>email</h4>
+                <p>numero</p>
+            </div>
+            <div class="cont-footer">
+                <h4>localizacion</h4>
+                <p>numero</p>
+            </div>
+        </div>
+        <h2 class="titulo-last">&copy; cristian cabrera</h2>
+    </footer>
+</body>
+</html>
+
+<script>
+function openForm() {
+  document.getElementById("formulario").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("formulario").style.display = "none";
+}
+</script>
